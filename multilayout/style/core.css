@@ -1,0 +1,65 @@
+body {
+	font-size:90%;
+    background-color:#ffffff;color:#000000;}
+}
+.colmask {background-color:#ffffff;color:#000000;}
+#page-header {background-color:#ffffff;color:#000000;}
+#page-footer {background-color:#ffffff;color:#000000;}
+
+/***
+ ***	core: header
+ ***/
+#logo {
+    float:left;
+    background-color: transparent;
+    background-image: url([[pix:theme|moodle]]);
+    background-repeat: no-repeat;
+    background-position: left top;
+    display: inline-block;
+    height: 70px;
+    width: 250px;
+    /*IE hacks*/
+    zoom:1; *display: inline; _height: 70px;
+}
+.dir-rtl #logo {float:right;}
+
+.headermain {
+    float: left;
+    font-size: 2.3em;
+    margin: 15px 15px 15px 250px;
+}
+.dir-rtl .headermain {
+    float: right;
+    margin: 15px 250px 15px 15px;
+}
+.headermenu {
+    float: right;
+    font-size: 0.8em;
+    margin: 10px;
+    text-align: right;
+    /*IE hacks*/
+    zoom:1; *display: inline; _height: 70px;
+}
+.navbar {
+height:25px;
+margin:0 10px;
+}
+
+.clearfix:after {
+content: ".";
+display: block;
+height: 0;
+clear: both;
+visibility: hidden;
+overflow:hidden;
+}
+
+.clearfix {display: inline-block;}
+
+/* Hides from IE-mac \*/
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+
+
+

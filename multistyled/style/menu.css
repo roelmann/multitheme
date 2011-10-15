@@ -1,0 +1,48 @@
+#custommenu {background-color:[[setting:bgsidebar]];color:[[setting:maintxt]];
+    margin-top:95px;
+    clear: both;
+}
+
+.yui3-menu .yui3-menu {position: absolute; z-index: 1;}
+.yui3-menu .yui3-shim {border: medium none; height: 100%; left: 0; margin: 0; opacity: 0; padding: 0; position: absolute; top: 0; width: 100%; z-index: -1;}
+.yui3-menu-hidden {left: -10000px; top: -10000px; visibility: hidden;}
+.yui3-menu li {list-style-type: none;}
+.yui3-menu ul, .yui3-menu li {margin: 0; padding: 0;}
+.yui3-menu-label, .yui3-menuitem-content {display: block; text-align: left; white-space: nowrap;}
+.yui3-menu-horizontal li {float: left; width: auto;}
+.yui3-menu-horizontal li li {float: none;}
+.yui3-menu-horizontal ul { }
+.yui3-menu-horizontal ul ul { }
+.yui3-menu-horizontal > .yui3-menu-content > ul:after {clear: both; content: ""; display: block; font-size: 0; line-height: 0; visibility: hidden;}
+.yui3-menu-content { }
+.yui3-menu-hidden .yui3-menu-content { }
+.yui3-menuitem-content, .yui3-menu-label { }
+.yui3-menu-hidden .yui3-menuitem-content, .yui3-menu-hidden .yui3-menu-label { }
+.yui3-skin-sam .yui3-menu-content, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content {background: none repeat scroll 0 0 [[setting:bgsidebar]]; border: 1px solid [[setting:bgheadings]];  font-size: 93%; line-height: 1.5; padding: 3px 0;}
+.yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-content {font-size: 100%;}
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-content {background: none repeat scroll 0 0 [[setting:bgsidebar]]; line-height: 2; padding: 0;}
+.yui3-skin-sam .yui3-menu ul, .yui3-skin-sam .yui3-menu ul ul {border-top: 1px solid [[setting:bgheadings]]; margin-top: 3px; padding-top: 3px;}
+.yui3-skin-sam .yui3-menu ul.first-of-type {border: 0 none; margin: 0; padding: 0;}
+.yui3-skin-sam .yui3-menu-horizontal ul {border: 0 none; margin: 0; padding: 0;}
+.yui3-skin-sam .yui3-menu li, .yui3-skin-sam .yui3-menu .yui3-menu li { }
+.yui3-skin-sam .yui3-menu-horizontal li { }
+.yui3-skin-sam .yui3-menubuttonnav li {border-right: 1px solid [[setting:bgheadings]];}
+.yui3-skin-sam .yui3-splitbuttonnav li {border-right: 1px solid [[setting:bgheadings]];}
+.yui3-skin-sam .yui3-menubuttonnav li li, .yui3-skin-sam .yui3-splitbuttonnav li li {border-right: 0 none;}
+.yui3-skin-sam .yui3-menu-label, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label, .yui3-skin-sam .yui3-menuitem-content, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menuitem-content {border: 0 none; color: [[setting:maintxt]]; cursor: default; float: none; margin: 0; padding: 0 20px; text-decoration: none;}
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label, .yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-content {border-color: [[setting:bgheadings]]; border-style: solid; border-width: 1px 0; float: left; margin: -1px 0; padding: 0 10px; width: auto;}
+.yui3-skin-sam .yui3-menu-label, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label {background: url("yui_image.php?file=3.2.0/horizontal-menu-submenu-indicator.png") no-repeat scroll right center [[setting:bgsidebar]];}
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label {background: none repeat scroll 0 0 [[setting:bgsidebar]];}
+.yui3-skin-sam .yui3-menubuttonnav .yui3-menu-label, .yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label {background-image: none;}
+.yui3-skin-sam .yui3-menubuttonnav .yui3-menu-label {padding-right: 0;}
+.yui3-skin-sam .yui3-menubuttonnav .yui3-menu-label em {background: url("yui_image.php?file=3.2.0/horizontal-menu-submenu-indicator.png") no-repeat scroll right center transparent; display: block; font-style: normal; padding-right: 20px;}
+.yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label {padding: 0;}
+.yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label a {color: [[setting:maintxt]]; cursor: default; float: left; padding: 0 5px 0 10px; text-decoration: none; width: auto;}
+.yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label .yui3-menu-toggle {background: url("yui_image.php?file=3.2.0/horizontal-menu-submenu-indicator.png") no-repeat scroll 3px center transparent; border-left: 1px solid [[setting:bgheadings]]; overflow: hidden; padding: 0; text-indent: -1000px; width: 15px;}
+.yui3-skin-sam .yui3-menu-label-active, .yui3-skin-sam .yui3-menu-label-menuvisible, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-active, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menu-label-menuvisible {background-color: [[setting:bgmain]];}
+.yui3-skin-sam .yui3-menuitem-active .yui3-menuitem-content, .yui3-skin-sam .yui3-menu .yui3-menu .yui3-menuitem-active .yui3-menuitem-content {background-color: [[setting:bgsidebar]]; background-image: none; border-left-width: 0; margin-left: 0;}
+.yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label-active, .yui3-skin-sam .yui3-menu-horizontal .yui3-menuitem-active .yui3-menuitem-content, .yui3-skin-sam .yui3-menu-horizontal .yui3-menu-label-menuvisible {background: none repeat scroll 0 0 [[setting:bgsidebar]]; border-color: [[setting:bgheadings]];}
+.yui3-skin-sam .yui3-menubuttonnav .yui3-menu-label-active, .yui3-skin-sam .yui3-menubuttonnav .yui3-menuitem-active .yui3-menuitem-content, .yui3-skin-sam .yui3-menubuttonnav .yui3-menu-label-menuvisible, .yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label-active, .yui3-skin-sam .yui3-splitbuttonnav .yui3-menuitem-active .yui3-menuitem-content, .yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label-menuvisible {border-left-width: 1px; margin-left: -1px;}
+.yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label-menuvisible {background: none repeat scroll 0 0 transparent; border-color: [[setting:bgheadings]];}
+.yui3-skin-sam .yui3-splitbuttonnav .yui3-menu-label-menuvisible .yui3-menu-toggle {background: url("yui_image.php?file=3.2.0/horizontal-menu-submenu-toggle.png") no-repeat scroll left center transparent; border-color: [[setting:bgheadings]];}
+
