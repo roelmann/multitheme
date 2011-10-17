@@ -1,5 +1,16 @@
+html {
+    background-color:[[setting:bgmain]];color:[[setting:maintxt]];
+}
 body {
     background-color:[[setting:bgmain]];color:[[setting:maintxt]];
+    width:[[setting:bodywidth]];margin:0 auto;
+    border:1px solid [[setting:bgheadings]];
+}
+#headerwrap {
+    background-image: url([[pix:theme|headerwrap]]);
+    background-position: left top;
+    background-repeat: no-repeat;
+    height:150px;
 }
 
 #page-header {
@@ -10,10 +21,13 @@ body {
     color:[[setting:headertxt]];
     height:150px;
 }
+.navbar .breadcrumb ul li a {color:blue;}
+
 #logo {
     background-image: url([[setting:pgimage]]);
 }
 #page-footer {
+    border-top:1px dotted [[setting:maintxt]];
     background-color: [[setting:bgsidebar]];
 }
 .colmask {
@@ -40,7 +54,9 @@ body {
 /* 1col full page */
 .fullpage {background-color:[[setting:bgmain]];} /* main content */
 
-
+.region-content {
+    margin-top: 10px;
+}
 
 
 .block .header {

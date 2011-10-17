@@ -67,7 +67,7 @@ echo $OUTPUT->doctype() ?>
     <title><?php echo $PAGE->title ?></title>
     <link rel="shortcut icon" href="<?php echo $OUTPUT->pix_url('favicon', 'theme')?>" />
     <?php echo $OUTPUT->standard_head_html() ?>
-    
+
 </head>
 
 <!-- <BODY> Section -->
@@ -79,11 +79,14 @@ echo $OUTPUT->doctype() ?>
 
 <!-- HEADER Section -->
 <?php if ($hasheading || $hasnavbar) { ?>
+
     <div id="page-header" class="clearfix">
         <?php if ($hasheading) { ?>
+        <div id="headerwrap">
         <div id="logo">
         <h1 class="headermain"><?php echo $PAGE->heading ?></h1>
         </div>    <!-- end div logo -->
+
         <div class="headermenu"><?php
             if ($haslogininfo) {
                 echo $OUTPUT->login_info();
@@ -93,17 +96,20 @@ echo $OUTPUT->doctype() ?>
             }
             echo $PAGE->headingmenu ?>
         </div><?php } ?>     <!-- end div headermenu -->
-	<?php 
-	if ($hascustommenu) { ?>
- 			<div id="custommenu"><?php echo $custommenu; ?></div>
-	<?php } ?> 
+
+        <?php if ($hascustommenu) { ?>
+                <div id="custommenu" class="javascript-disabled"><?php echo $custommenu; ?></div>
+        <?php } ?>
+        
         <?php if ($hasnavbar) { ?>
             <div class="navbar clearfix">
                 <div class="breadcrumb"><?php echo $OUTPUT->navbar(); ?></div>
                 <div class="navbutton"> <?php echo $PAGE->button; ?></div>
             </div> <!-- end div navbar -->
         <?php } ?>
+        </div> <!-- end of headerwrap -->
     </div>  <!-- end div page-header -->
+
 <?php } ?>
 
 <!-- END OF HEADER -->

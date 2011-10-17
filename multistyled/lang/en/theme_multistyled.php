@@ -7,7 +7,8 @@ $string['choosereadme'] = '<h4>Multistyled</h4><h2>A ltr/rtl theme with multiple
 
 $string['layout'] = 'Select site-wide layout';
 $string['layoutdesc'] = 'You can select from any of 5 layout options built into the theme.<ul><li>3 column HolyGrail layout - a main centre column with left and right sidebars</li><li>3 column BlogStyle layout - a main column with two sidebars to the right (left if viewed in rtl language)</li><li>2 column layout with sidebar to the right</li><li>2 column layout with sidebar to the left</li><li>1 column full width layout where the normal sidebar contents are displayed below the main content</li></ul>for more detail about the layouts themselves and about the width and padding elements below please check out <a href="http://matthewjamestaylor.com/blog/perfect-stacked-columns.htm">http://matthewjamestaylor.com/blog/perfect-stacked-columns.htm</a>';
-
+$string['bodywidth_title']='Page body width';
+$string['bodywidth']='The theme is primarily designed as a fluid, full width scheme ie Body width = 100%. This can be adjusted using this setting if, for example a fixed 960px width is required. In this case some css styling may need to be applied to the html{} using the customcss box below - by default the html{} adopts the main content background colour.';
 
 $string['colourchoiceinfo']='';
 $string['colourchoicedesc']='<p><b>Multistyled Colour Settings</b></p>

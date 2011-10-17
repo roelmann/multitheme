@@ -19,6 +19,13 @@ $description = get_string('layoutdesc', 'theme_multistyled');
     $setting = new admin_setting_configselect($name, $title, $description, $default, $choices);
 $settings->add($setting);
 
+$name = 'theme_multistyled/bodywidth';
+$title=get_string('bodywidth_title','theme_multistyled');
+$description = get_string('bodywidth', 'theme_multistyled');
+$default = '100%';
+$setting = new admin_setting_configtext($name, $title, $description, $default);
+$settings->add($setting);
+
 // Page Image
 $name = 'theme_multistyled/pgimage';
 $title=get_string('pgimage_title','theme_multistyled');

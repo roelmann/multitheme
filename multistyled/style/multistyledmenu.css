@@ -1,0 +1,275 @@
+/* Custom Menu
+-------------------------- */
+
+#custommenu { 
+	width: 100%; 
+	margin: 0 auto; 
+	padding:20px 0 0 10px;
+	clear:both; 
+	height: 30px; 
+	background-color: transparent;
+	background-image: none;
+	background-repeat: repeat-x; 
+    background-position:center top;
+}
+#custommenu ul li { 
+	border-color: [[setting:bgheadings]]; border-style: ridge; border-width: 4px;
+    background-color: [[setting:bgheadings]];
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+    margin-right:5px;
+}
+
+/* 
+Dropdown Menu - CSS from DeCaf Theme by Lei Zhang
+-------------------------------------------------*/
+
+ul.dropdown span.customitem { 
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    background-color: [[setting:bgheadings]];
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+ul.dropdown li a,
+ul.dropdown span.customitem a { 
+	padding:6px 10px;
+}
+ul.dropdown span.customitem a:hover { 
+	border: 0;
+    background-color: [[setting:bgsidebar]];
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+#custommenu ul.dropdown ul { 
+	padding:0;
+	width:auto;
+}
+#custommenu ul.dropdown ul a { 
+    padding:4px 0px 4px 18px;
+	background-color:[[setting:bgheadings]];
+	background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+#custommenu ul.dropdown > li span a { 
+	height:17px;
+
+}
+
+ul.dropdown,
+ul.dropdown li,
+ul.dropdown ul {
+	list-style:none;
+	margin:0;
+	padding:0;
+}
+
+ul.dropdown {
+	position:relative;
+	top:0px;
+	z-index:597;
+	float:left;
+	font:13px "Trebuchet MS",Arial,Helvetica,sans-serif;
+	background-color:transparent;
+}
+
+ul.dropdown li {
+	float:left;
+	line-height:1.3em;
+	vertical-align:middle;
+    background-color: transparent; 
+	color:#fff;
+	zoom:1 !important;
+}
+
+ul.dropdown li.hover,
+ul.dropdown li:hover {
+	position:relative;
+	z-index:599;
+	cursor:default;
+    border-style:groove;
+}
+
+ul.dropdown ul {
+	visibility:hidden;
+	position:absolute;
+	top:100%;z-index:598;
+	left:-2px;
+	right:auto;
+	margin-top: -1px;
+	font:100% "Trebuchet MS",Arial,Helvetica,sans-serif;
+}
+
+ul.dropdown ul li {
+	float:none;
+/*	background-color:#3d3d3d;
+	border-width: 1px;
+	border-style: solid;
+	border-color: #777 #3d3d3d #333; */
+	padding:0;
+}
+
+ul.dropdown ul ul {
+	top:0;
+	right:auto;
+	left:100%;
+	margin-top:0;
+	border-top:none;
+	border-left:none;
+	font-weight:400;
+}
+ul.dropdown li:hover > ul {
+	visibility:visible;
+}
+ul.dropdown span,
+ul.dropdown span a,
+ul.dropdown li.clickable-with-children > a {
+	width: auto;
+	padding:2px 6px 4px 20px;
+	color: #fff;
+}
+
+ul.dropdown ul span, 
+ul.dropdown ul span a, 
+ul.dropdown ul li.clickable-with-children > a { 
+    background-color: [[setting:bgmain]] !important;
+	background-image: url([[pix:theme|menu/nav-arrow-right]]);
+	background-position:100% 50%;
+	background-repeat:no-repeat;
+	color: #fff;
+}
+
+
+ul.dropdown ul ul span,
+ul.dropdown ul ul span a,
+ul.dropdown ul ul li.clickable-with-children > a {
+	background-image: url([[pix:theme|menu/nav-arrow-right2]]);
+	background-position:100% 50%;
+	background-repeat:no-repeat;	
+	color: #fff;
+}
+
+ul.dropdown a:link, 
+ul.dropdown a:visited {
+	color: white;
+	text-decoration: none;
+}
+
+ul.dropdown a:hover { 
+	border: 0;
+    background-color: [[setting:bgsidebar]] !important;
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+
+ul.dropdown ul ul li { 
+}
+
+ul.dropdown ul ul ul li { 
+}
+
+ul.dropdown li a,
+ul.dropdown span,
+ul.dropdown span a { 
+	border: none; 
+	background-color: transparent;
+}
+
+ul.dropdown ul li a,
+ul.dropdown ul span,
+ul.dropdown ul span a { 
+	border: 0;
+}
+
+ul.dropdown ul ul li a,
+ul.dropdown ul ul span, 
+ul.dropdown ul ul span a {
+	border:0
+}
+
+ul.dropdown ul ul ul li a,
+ul.dropdown ul ul ul span, 
+ul.dropdown ul ul ul span a {
+	border:0;
+}
+
+ul.dropdown a,ul.dropdown span{ 
+	display:block; 
+}
+
+ul.dropdown ul a {
+	width:170px;
+	padding:2px 0 4px 5px;
+}
+
+ul.dropdown ul a.open:hover {
+    background-color: [[setting:bgsidebar]];
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+	color:#fff;
+}
+
+ul.dropdown ul li:hover > span, 
+ul.dropdown ul li:hover > span a {
+    background-color: [[setting:bgsidebar]];
+	background-image:url([[pix:theme|menu/ab-arrowover]]);
+	color: #fff;
+}
+
+ul.dropdown li.clickable-with-children:hover > a {
+  background-image:url([[pix:theme|menu/ab-arrowover]]);
+}
+
+ul.dropdown *.open,
+ul.dropdown li:hover > span, 
+ul.dropdown li:hover > span a {
+    background-color: [[setting:bgsidebar]];
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+  color: #fff;
+}
+ul.dropdown ul ul *.open,
+ul.dropdown ul ul li:hover > span,
+ul.dropdown ul ul li:hover > span a {
+    background-color: [[setting:bgsidebar]];
+  background-image:url([[pix:theme|menu/ab-arrowover]]);
+  color:#fff;
+}
+
+#custommenu ul li:hover {border-style:groove;}
+
+
+/* 
+Additional CSS for HOME Icon & Date in Custom Menu by Daniel Wahl (see renderers.php)
+----------------------------------------------------------------------------------------*/
+
+
+ul.dropdown {
+  width:100%
+}
+
+
+ul.dropdown > li:first-child a { 
+/*    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x; */
+    height: 17px;  
+}
+
+ul.dropdown > li:first-child a:hover {
+    background-color: [[setting:bgsidebar]];
+    background-image: url([[pix:theme|blockheaderbg]]);
+    background-position: left top;
+    background-repeat: repeat-x;
+}
+

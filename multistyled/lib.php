@@ -4,12 +4,13 @@ global $CFG;
 global $OUTPUT;
 
 /*Set the defaults here  - easier than reading through all the code*/
-$bgheadings= '#22dd22';
-$bgmain= '#effffe';
-$bgsidebar= '#ddffdd';
+$bgheadings= '#096B00';
+$bgmain= '#D9FDC6';
+$bgsidebar= '#04EB70';
 $headertxt= '#effffe';
 $maintxt= '#002200';
 $pgimage= $CFG->wwwroot.'/theme/multistyled/pix/logo.png';
+$bodywidth='100%';
 
 
 /*********************************************************/
@@ -17,6 +18,10 @@ $pgimage= $CFG->wwwroot.'/theme/multistyled/pix/logo.png';
 /*********************************************************/
 
 //any settings page adjustments go here
+
+// Set bodywidth
+    if (!empty($theme->settings->bodywidth)) {$bodywidth = $theme->settings->bodywidth;} 
+    $css = multistyled_set_bodywidth($css, $bodywidth);
 
 // Set background colour 1
     if (!empty($theme->settings->bgheadings)) {$bgheadings = $theme->settings->bgheadings;} 
@@ -50,6 +55,12 @@ return $css;
 /****************************************************************************************************/
 //Functions to set replacement values in the css
 
+function multistyled_set_bodywidth($css, $bodywidth) {
+    $tag = '[[setting:bodywidth]]';
+    $replacement = $bodywidth;
+    $css = str_replace($tag, $replacement, $css);
+    return $css;
+}
 function multistyled_set_bgheadings($css, $bgheadings) {
     $tag = '[[setting:bgheadings]]';
     $replacement = $bgheadings;
