@@ -2,9 +2,16 @@
 
 $THEME->name = 'multistyled';
 
-$THEME->parents = array('multilayout','base');
+$THEME->parents = array(
+    'multilayout',
+    'base'
+);
 
-$THEME->sheets = array('multistyled_core','multistyledmenu','custom');
+$THEME->sheets = array(
+    'multistyled_core',
+    'multistyledmenu',
+    'custom'
+);
 
 $THEME->enable_dock = false;
 

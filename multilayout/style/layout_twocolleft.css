@@ -1,0 +1,31 @@
+/**************************************************************************/
+/*                 MAIN LAYOUT CSS FOR MULTILAYOUT THEME                  */
+/*            This layout is taken from Matthew James Taylor's            */
+/*        Ultimate Stacked Multi-Column Liquid Layout (Pixel-widths)      */
+/* http://matthewjamestaylor.com/blog/ultimate-stacked-columns-pixels.htm */
+/*                                                                        */
+/*   This file holds the specific css for the 2column Left Menu layout    */
+/*   see other files for common css and css specific to other layouts     */
+/**************************************************************************/
+
+
+	.leftmenu {
+	}
+	.leftmenu .colleft {
+		right:79%;			/* right column width */
+	}
+	.leftmenu .col1 {
+		width:77%;			/* right column content width */
+		left:101%;			/* 100% plus left column left padding */
+	}
+	.leftmenu .col2 {
+		width:19%;			/* left column content width (column width minus left and right padding) */
+		left:3%;			/* (right column left and right padding) plus (left column left padding) */
+	}
+	
+.content-only .leftmenu .colmid {right:0%;}
+.content-only .leftmenu .colleft {right: 100%;}
+.content-only .leftmenu .col1 {width:98%;left:101%;}
+.content-only .leftmenu .col2 {width:0; left: 2%;}
+.content-only .leftmenu .col3 {width:0; left:102%}
+

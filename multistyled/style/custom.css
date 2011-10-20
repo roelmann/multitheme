@@ -1,5 +1,6 @@
 /** Custom CSS **/
-/*This should be the last file in the css array in config and no other css should be added after the custom css setting */
+/*This should be the last file in the css array in config and no other css should be added after the custom css setting
+* It has been kept as a separate file to ensure this is kept as the final css rule applied */
 
 
 

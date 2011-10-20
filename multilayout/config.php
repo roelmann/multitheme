@@ -8,13 +8,16 @@ $THEME->parents_exclude_sheets  = array(    // Any style sheets that are not nee
 );
 
 $THEME->sheets = array(                     // List of stylesheets within this theme
-    'mjt_stacked_layout',                   // Pagelayout stylesheet
-    'menu',                                 // custommenu stylesheet
+    'layout_common',                        // Pagelayout stylesheet - common elements
+    'layout_fullpage',
+    'layout_twocolleft',
+    'layout_twocolright',
+    'layout_blogstyle',
+    'layout_threecol',
     'core',                                 // Main css stylesheet for the theme - in this theme this will be minimal as it concentrates on the layout
 );
 
-$THEME->enable_dock = false;                // Disable dock - this theme is to work with IE6 and there have been reports that the dock does not consistently work in IE6 - this can be overwritten in child themes, although this would also require adjustments to the layout css files
-
+$THEME->enable_dock = false;                // Disable dock 
 $THEME->layouts = array(                    // Layouts to be used for different page types
     'base' => array(
         'file' => 'general_layouts.php',

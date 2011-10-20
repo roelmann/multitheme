@@ -1,0 +1,10 @@
+﻿Multitheme is in fact a theme family – both are provided in the zip file or from GitHub
+
+	Multilayout concentrates on providing the basic layout files and css for further development – it is intended to be built on in the same way as the core Base theme and not as a finished theme for general use.
+	Multistyled applies some styles and a settings page to Multilayout, using Multilayout and Base as parent themes. It remains a fairly basic theme allowing further enhancement by using this as another parent for development.
+
+The themes were developed with several intentions
+1. To return to a basic layout structure using MJT's HolyGrail and other layouts
+2. To enable non technical administrators to adjust the layout of a theme without needing to access server/theme files themselves
+3. To provide a basic level of customisation to non technical admins
+4. To ensure consistent layout working in rtl languages and through IE variations from 7+

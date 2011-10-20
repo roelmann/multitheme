@@ -1,0 +1,17 @@
+/**************************************************************************/
+/*                 MAIN LAYOUT CSS FOR MULTILAYOUT THEME                  */
+/*            This layout is taken from Matthew James Taylor's            */
+/*        Ultimate Stacked Multi-Column Liquid Layout (Pixel-widths)      */
+/* http://matthewjamestaylor.com/blog/ultimate-stacked-columns-pixels.htm */
+/*                                                                        */
+/*   This file holds the specific css for the 1column FullPage layout     */
+/*   see other files for common css and css specific to other layouts     */
+/**************************************************************************/
+
+
+	.fullpage {
+	}
+	.fullpage .col1 {
+		width:98%;			/* page width minus left and right padding */
+		left:1%;			/* page left padding */
+	}

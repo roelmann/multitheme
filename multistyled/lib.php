@@ -4,25 +4,20 @@ global $CFG;
 global $OUTPUT;
 
 /*Set the defaults here  - easier than reading through all the code*/
-$bgheadings= '#096B00';
-$bgmain= '#D9FDC6';
-$bgsidebar= '#04EB70';
-$headertxt= '#effffe';
-$maintxt= '#002200';
-$pgimage= $CFG->wwwroot.'/theme/multistyled/pix/logo.png';
-$bodywidth='100%';
-
-
-/*********************************************************/
-/*         MAIN BIT                                      */
-/*********************************************************/
+    $bgheadings= '#003300';
+    $bgmain= '#fafffa';
+    $bgsidebar= '#339933';
+    $headertxt= '#effffe';
+    $maintxt= '#002200';
+    $pgimage= $CFG->wwwroot.'/theme/multistyled/pix/logo.png';
+    $bodywidth='100%';
 
 //any settings page adjustments go here
+// Layout type is not set in the lib.php file but is used directly in the layout file itself
 
 // Set bodywidth
     if (!empty($theme->settings->bodywidth)) {$bodywidth = $theme->settings->bodywidth;} 
     $css = multistyled_set_bodywidth($css, $bodywidth);
-
 // Set background colour 1
     if (!empty($theme->settings->bgheadings)) {$bgheadings = $theme->settings->bgheadings;} 
     $css = multistyled_set_bgheadings($css, $bgheadings);
@@ -41,9 +36,9 @@ $bodywidth='100%';
 // Set the background image for the page
     if (!empty($theme->settings->pgimage)) {$pgimage = $theme->settings->pgimage;}
     $css = multistyled_set_pgimage($css, $pgimage);
-    
+// Set any custom css    
     if (!empty($theme->settings->customcss)) {
-    $customcss = $theme->settings->customcss;
+        $customcss = $theme->settings->customcss;
     } else {
         $customcss = null;
     }
@@ -100,9 +95,7 @@ function multistyled_set_pgimage($css, $pgimage) {
 function multistyled_set_customcss($css, $customcss) {
     $tag = '[[setting:customcss]]';
     $replacement = $customcss;
-    if (is_null($replacement)) {
-        $replacement = '';
-    }
+    if (is_null($replacement)) {$replacement = '';}
     $css = str_replace($tag, $replacement, $css);
     return $css;
 }

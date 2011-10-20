@@ -1,0 +1,46 @@
+/**************************************************************************/
+/*                 MAIN LAYOUT CSS FOR MULTILAYOUT THEME                  */
+/*            This layout is taken from Matthew James Taylor's            */
+/*        Ultimate Stacked Multi-Column Liquid Layout (Pixel-widths)      */
+/* http://matthewjamestaylor.com/blog/ultimate-stacked-columns-pixels.htm */
+/*                                                                        */
+/*   This file holds the specific css for the 3column BlogStyle layout    */
+/*   see other files for common css and css specific to other layouts     */
+/**************************************************************************/
+
+
+	.blogstyle {
+	}
+	.blogstyle .colmid {
+		right:21%;			/* width of the right column */
+	}
+	.blogstyle .colleft {
+		right:21%;			/* width of the middle column */
+	}
+	.blogstyle .col1 {
+		width:56%;			/* width of center column content (column width minus padding on either side) */
+		left:43%;			/* 100% plus left padding of center column */
+	}
+	.blogstyle .col2 {
+		width:19%;			/* Width of left column content (column width minus padding on either side) */
+		left:45%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.blogstyle .col3 {
+		width:19%;			/* Width of right column content (column width minus padding on either side) */
+		left:47%;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+
+.side-pre-only .blogstyle .colleft {right:0;}
+.side-pre-only .blogstyle .col1 {width:77%;left:22%;}
+.side-pre-only .blogstyle .col2 {width:19%;left:24%;}
+.side-pre-only .blogstyle .col3 {display:none;width:0;}
+.side-post-only .blogstyle .colleft {right:0;}
+.side-post-only .blogstyle .col1 {width:77%;left:22%;}
+.side-post-only .blogstyle .col2 {display:none;width:0;}
+.side-post-only .blogstyle .col3 {width:19%;left:24%;}
+.content-only .blogstyle .colmid {right:0%;}
+.content-only .blogstyle .colleft {right: 100%;}
+.content-only .blogstyle .col1 {width:98%;left:101%;}
+.content-only .blogstyle .col2 {width:0; left: 2%;}
+.content-only .blogstyle .col3 {width:0; left:102%}

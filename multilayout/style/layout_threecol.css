@@ -1,0 +1,48 @@
+/**************************************************************************/
+/*                 MAIN LAYOUT CSS FOR MULTILAYOUT THEME                  */
+/*            This layout is taken from Matthew James Taylor's            */
+/*        Ultimate Stacked Multi-Column Liquid Layout (Pixel-widths)      */
+/* http://matthewjamestaylor.com/blog/ultimate-stacked-columns-pixels.htm */
+/*                                                                        */
+/*   This file holds the specific css for the 3column HolyGrail layout    */
+/*   see other files for common css and css specific to other layouts     */
+/**************************************************************************/
+
+
+	.threecol {
+	}
+	.threecol .colmid {
+		right:21%;			/* width of the right column */
+	}
+	.threecol .colleft {
+		right:58%;			/* width of the middle column */
+	}
+	.threecol .col1 {
+		width:56%;			/* width of center column content (column width minus padding on either side) */
+		left:101%;			/* 100% plus left padding of center column */
+	}
+	.threecol .col2 {
+		width:19%;			/* Width of left column content (column width minus padding on either side) */
+		left:24%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+	}
+	.threecol .col3 {
+		width:19%;			/* Width of right column content (column width minus padding on either side) */
+		left:84%;			/* Please make note of the brackets here:
+						(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+	}
+
+.side-pre-only .threecol .colmid {right:0%;}
+.side-pre-only .threecol .colleft {right:79%;}
+.side-pre-only .threecol .col1 {width:77%;left:101%;}
+.side-pre-only .threecol .col2 {width:19%;left:3%;}
+.side-pre-only .threecol .col3 {display:none;width:0;}
+.side-post-only .threecol .colleft {right:0%;}
+.side-post-only .threecol .col1 {width:77%;left:22%;}
+.side-post-only .threecol .col2 {display:none;width:0;}
+.side-post-only .threecol .col3 {width:19%;left:24%;}
+.content-only .threecol .colmid {right:0%;}
+.content-only .threecol .colleft {right: 100%;}
+.content-only .threecol .col1 {width:98%;left:101%;}
+.content-only .threecol .col2 {width:0; left: 2%;}
+.content-only .threecol .col3 {width:0; left:102%}
+

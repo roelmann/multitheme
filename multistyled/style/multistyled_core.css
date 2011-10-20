@@ -1,9 +1,12 @@
 html {
-    background-color:[[setting:bgmain]];color:[[setting:maintxt]];
+    background-color:[[setting:bgmain]];
+    color:[[setting:maintxt]];
 }
 body {
-    background-color:[[setting:bgmain]];color:[[setting:maintxt]];
-    width:[[setting:bodywidth]];margin:0 auto;
+    background-color:[[setting:bgmain]];
+    color:[[setting:maintxt]];
+    width:[[setting:bodywidth]];
+    margin:0 auto;
     border:1px solid [[setting:bgheadings]];
 }
 #headerwrap {
@@ -34,25 +37,43 @@ body {
     border-top: 5px solid [[setting:bgsidebar]];
     border-bottom: 5px solid [[setting:bgsidebar]];
 }
+
 /* layout background colours */
 /* 3col HolyGrail */
-.threecol .colleft {background-color:[[setting:bgsidebar]];} /* left sidebar */
-.threecol .colmid {background-color:[[setting:bgmain]];} /* main content */
-.threecol {background-color:[[setting:bgsidebar]];} /* right sidebar */
+.threecol .colleft {
+    background-color:[[setting:bgsidebar]];} /* left sidebar */
+.threecol .colmid {
+    background-color:[[setting:bgmain]];} /* main content */
+.threecol {
+    background-color:[[setting:bgsidebar]];} /* right sidebar */
+    
 /* 3col BlogStyle */
-.blogstyle .colleft {background-color:[[setting:bgmain]];} /* main content */
-.blogstyle .colmid {background-color:[[setting:bgsidebar]];} /* 1st sidebar */
-.blogstyle {background-color:[[setting:bgsidebar]];} /* 2nd sidebar */
-.contentonly .blogstyle .col1 {background-color:[[setting:bgmain]];} /* main content */
+.blogstyle .colleft {
+    background-color:[[setting:bgmain]];} /* main content */
+.blogstyle .colmid {
+    background-color:[[setting:bgsidebar]];} /* 1st sidebar */
+.blogstyle {
+    background-color:[[setting:bgsidebar]];} /* 2nd sidebar */
+.contentonly .blogstyle .col1 {
+    background-color:[[setting:bgmain]];} /* main content */
+    
 /* 2col leftmenu */
-.leftmenu .colleft {background-color:[[setting:bgsidebar]];} /* left sidebar */
-.leftmenu {background-color:[[setting:bgmain]];} /* main content */
+.leftmenu .colleft {
+    background-color:[[setting:bgsidebar]];} /* left sidebar */
+.leftmenu {
+    background-color:[[setting:bgmain]];} /* main content */
+    
 /* 2col rightmenu */
-.rightmenu .colleft {background-color:[[setting:bgmain]];} /* main content */
-.rightmenu {background-color:[[setting:bgsidebar]];} /* left sidebar */
-.contentonly .rightmenu .col1 {background-color:[[setting:bgmain]];} /* main content */
+.rightmenu .colleft {
+    background-color:[[setting:bgmain]];} /* main content */
+.rightmenu {
+    background-color:[[setting:bgsidebar]];} /* left sidebar */
+.contentonly .rightmenu .col1 {
+    background-color:[[setting:bgmain]];} /* main content */
+    
 /* 1col full page */
-.fullpage {background-color:[[setting:bgmain]];} /* main content */
+.fullpage {
+    background-color:[[setting:bgmain]];} /* main content */
 
 .region-content {
     margin-top: 10px;
@@ -71,7 +92,8 @@ body {
     color:[[setting:headertxt]];
 }
 .block .content {
-    background-color:[[setting:bgmain]];color:[[setting:maintxt]];
+    background-color:[[setting:bgmain]];
+    color:[[setting:maintxt]];
 }
 .path-course-view .headingblock {
     background-color: [[setting:bgheadings]];
@@ -81,7 +103,9 @@ body {
     height:25px;
     color:[[setting:headertxt]];
 }
-.course-content h2.headingblock{margin-top:0;}
+.course-content h2.headingblock{
+    margin-top:0;
+}
 
 
 

@@ -1,0 +1,97 @@
+/**************************************************************************/
+/*                 MAIN LAYOUT CSS FOR MULTILAYOUT THEME                  */
+/*            This layout is taken from Matthew James Taylor's            */
+/*        Ultimate Stacked Multi-Column Liquid Layout (Pixel-widths)      */
+/* http://matthewjamestaylor.com/blog/ultimate-stacked-columns-pixels.htm */
+/*                                                                        */
+/*  This file holds the common css for all layouts - the layout specific  */
+/*      css can be found in separate named css files in this folder       */
+/**************************************************************************/
+
+
+
+/* General styles */
+/*----------------*/
+	body {
+		margin:0;
+		padding:0;
+		border:0;			/* This removes the border around the viewport in old versions of IE */
+		width:100%;
+		min-width:600px;		/* Minimum width of layout - remove line if not required */
+						/* The min-width property does not work in old versions of Internet Explorer */
+		font-size:90%;
+	}
+
+/* Header styles */
+/*---------------*/
+    #page-header {
+        clear:both;
+        float:left;
+        width:100%;
+    }
+    
+    .region-content {margin-top:1em;}
+
+/* Additional Top and Bottom Block regions */
+/*-----------------------------------------*/
+#top_block {
+
+    }
+#topleft_block {
+    width:48%;
+    margin-left:1%;
+    float:left;
+    }
+#topright_block {
+    width:48%;
+    margin-right:1%;
+    float:right;
+    }
+#bottom_block {
+
+    }
+#bottomleft_block {
+    width:48%;
+    margin-left:1%;
+    float:left;
+    }
+#bottomright_block {
+    width:48%;
+    margin-right:1%;
+    float:right;
+    }
+    
+/* Footer styles */
+/*---------------*/
+	#page-footer {
+        clear:both;
+        float:left;
+        width:100%;
+    }
+    
+    
+/* column container */
+	.colmask {
+		position:relative;	/* This fixes the IE7 overflow hidden bug */
+		clear:both;
+		float:left;
+		width:100%;			/* width of whole page */
+		overflow:hidden;		/* This chops off any overhanging divs */
+	}
+	/* common column settings */
+	.colleft,
+	.colmid,
+	.colright {
+		float:left;
+		width:100%;
+		position:relative;
+	}
+	.col1,
+	.col2,
+	.col3 {
+		float:left;
+		position:relative;
+		padding:0 0 1em 0;
+		overflow:hidden;
+	}
+
